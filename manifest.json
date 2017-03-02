@@ -1,0 +1,20 @@
+{
+	"name"             : "Global Command Actions",
+	"description"      : "Ctrl+Shift+0 global hotkey to browser toggle commands",
+	"version"          : "1.0",
+	"manifest_version" : 2,
+	"background"       : {
+		"scripts"    : ["background.js"],
+		"persistent" : false
+	},
+	"commands"         : {
+		"toggle-feature" : {
+			"suggested_key" : {
+				"default" : "Ctrl+Shift+0"
+			},
+			"description"   : "Send a 'toggle-feature' event to the extension",
+			"global"        : true
+		}
+	},
+	"permissions"      : ["tabs", "commands", "https://music.yandex.ru/*"]
+}

@@ -1,0 +1,1 @@
+document.getElementsByClassName('player-controls__btn player-controls__btn_play player-controls__btn_pause')[0].click();
